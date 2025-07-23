@@ -1,9 +1,20 @@
-function getGrade(score) {
-  if (score >= 70 && score <= 100) return 'A';
-  else if (score >= 60 && score <= 69) return 'B';
-  else if (score >= 50 && score <= 59) return 'C';
-  else if (score >= 45 && score <= 49) return 'D';
-  else if (score >= 40 && score <= 44) return 'E';
-  else if (score >= 0 && score <= 39) return 'F';
-  else return 'Invalid score';
-}
+def get_grade(score):
+    if 70 <= score <= 100:
+        return 'A'
+    elif 60 <= score <= 69:
+        return 'B'
+    elif 50 <= score <= 59:
+        return 'C'
+    elif 45 <= score <= 49:
+        return 'D'
+    elif 40 <= score <= 44:
+        return 'E'
+    elif 0 <= score <= 39:
+        return 'F'
+    else:
+        return 'Invalid score'
+
+# Example usage
+print(get_grade(85))   # Output: A
+print(get_grade(43))   # Output: E
+print(get_grade(-10))  # Output: Invalid score
